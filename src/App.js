@@ -19,7 +19,7 @@ function App() {
       <Card className="m-7 w-[600px]  bg-violet-300">
         <Typography.Title>Todo List</Typography.Title>
         <div className="flex justify-center">
-          <Input onChange={(e) => console.log(e)} type="primary" />
+          <Input onChange={(e) => setTodo(e.target.value)} type="primary" />
           <Button
             onClick={handleOnclickSubmit}
             className="m-1 rounded-xl bg-blue-400 font-bold"
